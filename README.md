@@ -1,25 +1,10 @@
-# coffee-compiler
+# coffee-compiler2
 
-A handy [CoffeeScript](http://coffeescript.org/) compiler from a series of compilers that have the same signature.
-
-[![Dependency status](https://david-dm.org/alexgorbatchev/coffee-compiler.png)](https://david-dm.org/alexgorbatchev/coffee-compiler)
-[![devDependency Status](https://david-dm.org/alexgorbatchev/coffee-compiler/dev-status.png)](https://david-dm.org/alexgorbatchev/coffee-compiler#info=devDependencies)
-[![Build Status](https://secure.travis-ci.org/alexgorbatchev/coffee-compiler.png?branch=master)](https://travis-ci.org/alexgorbatchev/coffee-compiler)
-
-[![NPM](https://nodei.co/npm/coffee-compiler.png?downloads=true)](https://npmjs.org/package/coffee-compiler)
-
-## Support
-
-Please help me spend more time developing and maintaining awesome modules like this by donating!
-
-The absolute best thing to do is to sign up with [Gittip](http://gittip.com) if you haven't already and donate just $1 a week. That is roughly a cup of coffee per month. Also, please do donate to many other amazing open source projects!
-
-[![Gittip](http://img.shields.io/gittip/alexgorbatchev.png)](https://www.gittip.com/alexgorbatchev/)
-[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PSDPM9268P8RW "Donate once-off to this project using Paypal")
+A handy compiler with [CoffeeScript2](http://coffeescript.org/).
 
 ## Installation
 
-    npm install coffee-compiler
+    npm install coffee-compiler2
 
 ## Testing
 
@@ -27,7 +12,7 @@ The absolute best thing to do is to sign up with [Gittip](http://gittip.com) if 
 
 ## Using
 
-    var coffee = require('coffee-compiler');
+    var coffee = require('coffee-compiler2');
 
     var opts = {
       sourceMap: true,
@@ -41,16 +26,6 @@ The absolute best thing to do is to sign up with [Gittip](http://gittip.com) if 
     coffee.fromFile('./main.coffee', opts, function(err, js) {
       console.log(js);
     });
-
-## Other modules
-
-* [jade-compiler](https://github.com/alexgorbatchev/jade-compiler)
-* [stylus-compiler](https://github.com/alexgorbatchev/stylus-compiler)
-* [coffee-compiler](https://github.com/alexgorbatchev/coffee-compiler)
-* [coffee-errors](https://github.com/alexgorbatchev/coffee-errors)
-* [bubble-boy](https://github.com/alexgorbatchev/bubble-boy)
-* [syntaxhighlighter](https://github.com/alexgorbatchev/syntaxhighlighter)
-* [query-filter](https://github.com/alexgorbatchev/query-filter)
 
 ## License
 
