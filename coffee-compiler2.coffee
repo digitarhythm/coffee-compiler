@@ -1,5 +1,5 @@
-fs     = require 'fs'
-coffee = require 'coffee-script'
+fs     = require 'fs-extra'
+coffee = require 'coffeescript'
 
 module.exports = compiler =
   fromSource: (src, opts..., callback) ->
@@ -22,7 +22,7 @@ module.exports = compiler =
           code += new Buffer(JSON.stringify map).toString('base64')
     catch err
       if err.name is 'SyntaxError'
-        err.message = coffee.helpers.prettyErrorMessage err, opts.filename or 'coffee-compiler', src
+        err.message = err.toString()
 
     callback err, code
 
