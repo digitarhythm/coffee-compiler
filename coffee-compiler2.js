@@ -30,9 +30,8 @@ module.exports = compiler = {
       }
     } catch (error) {
       err = error;
-      console.log(coffee.helpers);
       if (err.name === 'SyntaxError') {
-        err.message = coffee.helpers.prettyErrorMessage(err, opts.filename || 'coffee-compiler', src);
+        err.message = err.toString();
       }
     }
     return callback(err, code);
